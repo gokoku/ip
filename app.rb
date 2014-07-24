@@ -3,8 +3,9 @@ require 'json'
 
 get '/' do
   request = Rack::Request.new(env)
-  JSON.generate({
+  json = JSON.generate({
       ip: request.ip,
       agent: request.user_agent
     })
+  "#{json}"
 end
