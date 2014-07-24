@@ -2,5 +2,9 @@ require 'sinatra'
 require 'json'
 
 get '/' do
-  "Hello world!"
+  request = Rack::Request.new(env)
+  JSON.generate({
+      ip: request.ip,
+      agent: request.user_agent
+    })
 end
