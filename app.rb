@@ -10,6 +10,6 @@ end
 
 get '/hello' do
   JSON.generate(
-    {'hello': 'world!'}
+    {'hello': 'hello world!'}
   )
 end
