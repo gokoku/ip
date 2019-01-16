@@ -7,3 +7,9 @@ get '/' do
                   [{ ip: request.ip,
                      agent: request.user_agent }]} )
 end
+
+get '/hello' do
+  JSON.generate(
+    {'hello': 'world'}
+  )
+end
