@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'sinatra'
+gem 'sinatra', '> 2.2.3'
 gem 'shotgun'
-gem 'rack', ">= 2.0.8"
+gem 'rack', ">= 2.2.4"
